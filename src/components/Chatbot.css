@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+}
+
+.human {
+  justify-content: flex-end;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--ion-color-medium);
+  border-radius: 50%;
+  background-color: var(--ion-color-white);
+}
+
+.bot .avatar {
+  margin-right: 10px;
+}
+
+.human .avatar {
+  margin-left: 10px;
+}
+
+.dialog {
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--ion-color-light);
+  margin-top: 30px;
+}
+
+.bot .dialog {
+  background-color: var(--ion-color-primary);
+  border-top-left-radius: 0;
+}
+
+.human .dialog {
+  background-color: var(--ion-color-tertiary);
+  border-top-right-radius: 0;
+}
+
+.end {
+  height: 60px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.btn-send {
+  height: 60px;
+  margin-right: 0;
+  width: 62px;
+}
+
+.bot-is-typing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 0.9rem;
+  color: #9f9f9f;
+}
+
+.bot-is-typing :is(ion-spinner) {
+  height: 10px;
+}
